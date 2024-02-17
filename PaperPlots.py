@@ -71,5 +71,5 @@ print(IRAC_ch4)
 print(ricci_LIR_match_Ned)
 
 
-plot.IR_colors('_paper/IR_colors_LIR',np.log10(IRAC_ch3/IRAC_ch1),np.log10(IRAC_ch4/IRAC_ch2),L=ricci_LIR_match_Ned,colorbar=True,samp1=np.where(ricci_Lx_full_match_Ned > 42.9),samp2=np.where(ricci_Lx_full_match_Ned > 999),colorbar_label=r'log ($L_{\rm IR}$/$L_\odot$)',select_sources=True,clim=[10.5,12.5],xlim=[-0.2,1.0],ylim=[0,1.4])
-plot.IR_colors('_paper/IR_colors_Lx',np.log10(IRAC_ch3/IRAC_ch1),np.log10(IRAC_ch4/IRAC_ch2),L=ricci_Lx_full_match_Ned,colorbar=True,samp1=np.where(ricci_Lx_full_match_Ned > 42.9),samp2=np.where(ricci_Lx_full_match_Ned > 999),colorbar_label=r'log ($L_{\rm 0.2 - 10\,keV}$/erg$\rm \, s^{-1}$)',select_sources=True,clim=[42.5,44],xlim=[-0.2,1.0],ylim=[0,1.4])
+plot.IR_colors('_paper/IR_colors_LIR',np.log10(IRAC_ch3/IRAC_ch1),np.log10(IRAC_ch4/IRAC_ch2),L=ricci_LIR_match_Ned,colorbar=True,samp1=np.where(ricci_Lx_full_match_Ned > 42.9),samp2=np.where(ricci_Lx_full_match_Ned > 999),colorbar_label=r'log ($L_{\rm IR}$/$L_\odot$)',select_sources=True,clim=[10.5,12.5],xlim=[-0.32,0.9],ylim=[-0.32,1.4],Lacy=True)
+plot.IR_colors('_paper/IR_colors_Lx',np.log10(IRAC_ch3/IRAC_ch1),np.log10(IRAC_ch4/IRAC_ch2),L=ricci_Lx_full_match_Ned,colorbar=True,samp1=np.where(ricci_Lx_full_match_Ned > 42.9),samp2=np.where(ricci_Lx_full_match_Ned > 999),colorbar_label=r'log ($L_{\rm 0.2 - 10\,keV}$/erg$\rm \, s^{-1}$)',select_sources=True,clim=[42.5,44],xlim=[-0.32,0.9],ylim=[-0.32,1.4],Lacy=True)
